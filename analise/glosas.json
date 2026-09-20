@@ -1,0 +1,200 @@
+{
+  "_leia_me": [
+    "Glosas por FACETAS das 9 subáreas de nível 1 (ANPPOM). RASCUNHO escrito pelo assistente a partir de conhecimento geral do campo — SEM revisão humana até que o autor do projeto revise.",
+    "Uso: python3 -m analise.laboratorio_glosas (diagnóstico), --sugerir (facetas/termos que os dados sugerem), --revisao N (casos de fronteira para julgar).",
+    "A ordem e os nomes das áreas seguem ANPPOM_SUBAREAS em clustering.py (o índice 0..8 é o mesmo dos rótulos).",
+    "Regras de escrita: (1) registro de RESUMO de projeto — 1 a 3 frases sobre o objeto de estudo e o método, não lista solta de palavras; (2) SEM negações ('não é X'): o modelo de embedding não entende negação e a menção ao termo aproxima da área errada; (3) SEM nomes de autores/compositores; (4) cada faceta descreve UMA frente de pesquisa da área — a nota da área é o maior peso entre as facetas; (5) o vocabulário que separa uma área da vizinha vai na área que o possui, não nas duas.",
+    "As facetas NÃO são as subáreas de nível 2 (filtros do usuário): são só o meio de medir aderência. Mudar uma não reorganiza a outra."
+  ],
+  "areas": [
+    {
+      "nome": "Composição e Sonologia",
+      "facetas": [
+        {
+          "nome": "Processo criativo do compositor",
+          "texto": "Pesquisa em composição como prática artística: o processo criativo do próprio compositor, memorial de composição, poéticas pessoais e técnicas de escrita, planejamento e orquestração de obras originais para instrumentos, voz e conjuntos."
+        },
+        {
+          "nome": "Eletroacústica, computação e processamento digital",
+          "texto": "Criação de obras eletroacústicas, acusmáticas e mistas e desenvolvimento de sistemas computacionais para a criação sonora: síntese e processamento digital do som, composição algorítmica e assistida por computador, espacialização, sensores, interação em tempo real e inteligência artificial."
+        },
+        {
+          "nome": "Sonologia, acústica e arte sonora",
+          "texto": "Estudo do som como objeto de pesquisa e de criação: acústica musical, psicoacústica, timbre, paisagem sonora, ecologia acústica, arte sonora, instalações e performances sonoras, música experimental e improvisação livre."
+        },
+        {
+          "nome": "Música experimental e improvisação livre",
+          "texto": "Música experimental e improvisação livre: criação sonora com ruídos, instrumentos alternativos e meios não convencionais, laboratórios de criação sonora e práticas de criação coletiva de música contemporânea."
+        }
+      ]
+    },
+    {
+      "nome": "Educação Musical",
+      "facetas": [
+        {
+          "nome": "Educação básica e escola",
+          "texto": "Ensino e aprendizagem de música na educação básica e nas escolas públicas: currículo, legislação e políticas educacionais, práticas pedagógicas em sala de aula e atuação do professor de música no ambiente escolar."
+        },
+        {
+          "nome": "Formação de professores e licenciatura",
+          "texto": "Formação inicial e continuada de professores de música, cursos de licenciatura, estágios supervisionados, egressos, identidade e trabalho docente, e a relação entre a universidade e a escola."
+        },
+        {
+          "nome": "Ensino de instrumento, canto e prática de conjunto",
+          "texto": "Metodologias de ensino e aprendizagem de instrumento musical, canto e prática em grupo: aulas coletivas e individuais, escolas de música, bandas e corais educativos, o papel do professor e a trajetória do aluno."
+        },
+        {
+          "nome": "Educação musical em espaços não formais e inclusivos",
+          "texto": "Educação musical em comunidades, projetos sociais e espaços não formais, com atenção à diversidade, à inclusão e à educação especial; uso de tecnologias digitais e de ensino a distância na aprendizagem musical."
+        },
+        {
+          "nome": "Desenvolvimento e aprendizagem musical de crianças e jovens",
+          "texto": "Investigação sobre o desenvolvimento musical na infância e na juventude, a motivação para aprender música, a musicalização e a construção do conhecimento musical por crianças, adolescentes e adultos."
+        },
+        {
+          "nome": "Criação e processos criativos no ensino de música",
+          "texto": "Criação musical na aprendizagem: processos criativos, improvisação e composição como práticas de ensino, educação sonora e ecologia acústica aplicadas a diferentes contextos de ensino e aprendizagem de música."
+        }
+      ]
+    },
+    {
+      "nome": "Etnomusicologia",
+      "facetas": [
+        {
+          "nome": "Etnografia de povos e comunidades",
+          "texto": "Pesquisa etnográfica sobre as práticas musicais de povos indígenas, comunidades tradicionais, quilombolas, ribeirinhas e imigrantes: cantos, danças, festas e rituais, com trabalho de campo e atenção à relação entre a música e a vida social."
+        },
+        {
+          "nome": "Música, identidade e diáspora afro-brasileira",
+          "texto": "Estudo da música em relação à identidade étnica, racial e regional: tradições afro-brasileiras e da diáspora africana, religiosidade, patrimônio cultural imaterial e políticas de salvaguarda das expressões musicais."
+        },
+        {
+          "nome": "Música, território e sociedade contemporânea",
+          "texto": "Análise de cenas e práticas musicais urbanas e rurais em seus territórios: música e gênero, música e movimentos sociais, música em contextos de migração e de mudança cultural, e os métodos antropológicos de pesquisa em música."
+        }
+      ]
+    },
+    {
+      "nome": "Música Popular",
+      "facetas": [
+        {
+          "nome": "Música popular brasileira: canção, choro, samba e gravações",
+          "texto": "Estudos sobre música popular brasileira: MPB, canção, canto popular, choro, samba, rock e outros gêneros; análise de fonogramas e gravações históricas, historiografia e sociologia da música popular no Brasil e suas cenas e movimentos."
+        },
+        {
+          "nome": "Criação, arranjo e performance em música popular",
+          "texto": "Processos de criação em música popular: composição, arranjo, improvisação e interpretação, o canto popular, e a práxis de artistas e instrumentistas populares na construção de suas obras e de seu estilo."
+        },
+        {
+          "nome": "Trabalho, mercado e indústria da música",
+          "texto": "Trabalho e profissão de músicos, mercado de trabalho musical, indústria fonográfica, gravação e produção, suportes como o disco e o LP, audição privada, mídia e consumo, e as relações sociais de produção da música popular."
+        }
+      ]
+    },
+    {
+      "nome": "Performance Musical",
+      "facetas": [
+        {
+          "nome": "Interpretação e repertório",
+          "texto": "Pesquisa sobre a interpretação de obras do repertório para instrumento solo, música de câmara e voz: escolhas interpretativas, estudo de partituras e edições, gravações e a construção de uma leitura pessoal da obra."
+        },
+        {
+          "nome": "Repertório de um instrumento ou formação",
+          "texto": "Levantamento, catalogação e estudo de obras escritas para um instrumento específico ou para uma formação de câmara, sobretudo o repertório brasileiro, com edição, gravação, recital e reflexão sobre a interpretação desse repertório."
+        },
+        {
+          "nome": "Técnica instrumental e vocal",
+          "texto": "Estudo das técnicas de execução ao piano, nas cordas, nos sopros, na percussão e no canto: controle motor, gesto e movimento, respiração, estratégias de estudo e prática deliberada para o desenvolvimento técnico do instrumentista e do cantor."
+        },
+        {
+          "nome": "Expressão, gesto e cognição na performance",
+          "texto": "Investigação da expressão musical do intérprete: gesto e movimento corporal, controle da expressão, expressão vocal, preparação para a apresentação, memorização, ansiedade de palco e comunicação com o público, com abordagens da psicologia da performance."
+        },
+        {
+          "nome": "Performance historicamente informada",
+          "texto": "Interpretação de música antiga e de música de outros períodos com base em fontes históricas, tratados, instrumentos de época e práticas de performance do passado, e a reconstrução dessas práticas hoje."
+        },
+        {
+          "nome": "Regência, prática coral e orquestral",
+          "texto": "Estudos sobre regência, ensaio e preparação de corais, orquestras e bandas: gesto do regente, construção sonora do conjunto, repertório e metodologias de trabalho com grupos vocais e instrumentais."
+        },
+        {
+          "nome": "Performance de música contemporânea e colaboração com compositores",
+          "texto": "Interpretação de música nova e de obras mistas com eletrônica, o trabalho conjunto entre intérprete e compositor, a estreia de obras e o desenvolvimento de técnicas expandidas do instrumento."
+        }
+      ]
+    },
+    {
+      "nome": "Musicologia",
+      "facetas": [
+        {
+          "nome": "História da música e historiografia",
+          "texto": "Pesquisa histórica sobre a música no Brasil e no mundo em diferentes períodos, como o colonial, o imperial e o século XX: biografias de compositores, instituições musicais, vida musical de cidades e a historiografia da música."
+        },
+        {
+          "nome": "Fontes, acervos e edição crítica",
+          "texto": "Pesquisa em arquivos, bibliotecas e acervos: manuscritos e partituras históricas, catalogação, paleografia, edição crítica e restauração de documentos musicais e preservação de fontes."
+        },
+        {
+          "nome": "Recepção, crítica, políticas culturais e história dos conceitos",
+          "texto": "Estudo da recepção e da crítica musical, da imprensa e da circulação de obras, das políticas públicas de cultura, da relação entre música, política e sociedade em diferentes épocas e das perspectivas críticas, feministas e decoloniais sobre a história da música e das artes."
+        }
+      ]
+    },
+    {
+      "nome": "Teoria e Análise Musical",
+      "facetas": [
+        {
+          "nome": "Análise de obras e repertórios",
+          "texto": "Análise de obras musicais dos repertórios tonal, pós-tonal e contemporâneo com ferramentas analíticas: estrutura, forma, harmonia, contraponto, motivos e relações entre as partes da obra."
+        },
+        {
+          "nome": "Teoria da música e modelos teóricos",
+          "texto": "Desenvolvimento e discussão de teorias e modelos musicais: teoria dos conjuntos, sistemas harmônicos, teorias do ritmo e da métrica, percepção da forma e ensino de teoria e percepção musical."
+        },
+        {
+          "nome": "Análise computacional",
+          "texto": "Modelos e ferramentas computacionais para a análise musical: representação simbólica da música, algoritmos de análise, recuperação de informação musical e visualização de estruturas musicais."
+        }
+      ]
+    },
+    {
+      "nome": "Musicoterapia",
+      "facetas": [
+        {
+          "nome": "Musicoterapia clínica e arte na saúde",
+          "texto": "Musicoterapia clínica e atividades artísticas e musicais com pacientes em hospitais e clínicas: saúde mental e psiquiatria, autismo, oncologia, reabilitação neurológica, cuidados paliativos e demência, visando qualidade de vida, com sessões, protocolos e avaliação dos efeitos."
+        },
+        {
+          "nome": "Musicoterapia social e comunitária",
+          "texto": "Prática musicoterapêutica em contextos sociais e comunitários, com bebês, idosos e grupos em vulnerabilidade, voltada ao bem-estar, à comunicação e à participação."
+        },
+        {
+          "nome": "Pesquisa e formação em musicoterapia",
+          "texto": "Métodos de pesquisa, escalas de avaliação e ensaios de validação em musicoterapia, a formação do musicoterapeuta e a construção do conhecimento próprio da profissão."
+        }
+      ]
+    },
+    {
+      "nome": "Demais Subáreas e Interfaces da Música",
+      "facetas": [
+        {
+          "nome": "Cognição, percepção e emoção musical",
+          "texto": "Estudos empíricos e experimentais sobre a percepção auditiva, a cognição e a emoção na música: como ouvintes percebem, lembram e sentem a música, preferência musical, neurociência da música e psicologia do ouvinte."
+        },
+        {
+          "nome": "Estética, filosofia e significado da música",
+          "texto": "Reflexão filosófica e estética sobre o significado, a expressão e o valor da música, semiótica musical, fenomenologia da escuta, corpo e música e a relação entre música e linguagem."
+        },
+        {
+          "nome": "Saúde e bem-estar de músicos",
+          "texto": "Pesquisa sobre a saúde física e mental de músicos: lesões e dores relacionadas à prática, ergonomia do instrumento, qualidade de vida, condições de trabalho e prevenção de problemas na atividade musical."
+        },
+        {
+          "nome": "Música em interface com outras áreas",
+          "texto": "Interfaces da música com o audiovisual, o cinema, os jogos, a dança, o teatro, as artes visuais e as tecnologias digitais, e estudos interdisciplinares que unem a música a outros campos do conhecimento."
+        }
+      ]
+    }
+  ]
+}

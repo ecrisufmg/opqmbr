@@ -1,0 +1,1641 @@
+{
+  "_leia_me": [
+    "GABARITO HUMANO (autor do projeto) dos casos de fronteira de derivados/glosas_revisao.md, rodada de 2026-09-19. É o único julgamento humano sobre subárea de nível 1 no projeto.",
+    "Campos: principal = subárea(s) que o autor aponta como principal (qualquer uma vale); alto = áreas que devem ter peso relevante (>= 0,15, o limiar que o próprio autor usa); baixo = {area: teto} que não devem passar do teto; veredito_original = transcrição literal do autor.",
+    "ATENÇÃO — viés de seleção: os casos foram escolhidos por DISCORDÂNCIA entre o rótulo do LLM e as facetas (metade) ou por indecisão das facetas (metade). Logo, as taxas medidas aqui NÃO são a acurácia na população; servem para comparar as duas fontes onde discordam e para ajustar as facetas.",
+    "Rodada de ajuste: os 21 primeiros casos serviram para DIAGNOSTICAR e ajustar as facetas (conjunto de desenvolvimento). Os casos seguintes de glosas_revisao.md, quando revistos, servem de TESTE — não ajustar as facetas olhando para eles.",
+    "veredito_original = transcrição literal do autor; principal/alto/baixo = leitura estruturada feita pelo assistente desses vereditos (revise se discordar)."
+  ],
+  "casos": {
+    "388526": {
+      "principal": [
+        "Composição e Sonologia"
+      ],
+      "alto": [
+        "Demais Subáreas e Interfaces da Música"
+      ],
+      "veredito_original": "Praticamente apenas Sonologia e Computação Musical (parte de Composição).... depois acrescentar Demais subáreas."
+    },
+    "353555": {
+      "principal": [
+        "Musicoterapia"
+      ],
+      "baixo": {
+        "Composição e Sonologia": 0.2,
+        "Performance Musical": 0.2,
+        "Educação Musical": 0.2
+      },
+      "veredito_original": "Deveria ter alto peso em musicoterapia (0.8, talvez?), maior que composição, performance e educação musical (com pesos somados de 0.2, talvez...)"
+    },
+    "736726": {
+      "principal": [
+        "Educação Musical"
+      ],
+      "alto": [
+        "Performance Musical",
+        "Composição e Sonologia"
+      ],
+      "veredito_original": "Performance está com peso bom, mas deveria ter maior peso de Sonologia (atualmente com Composição)... em torno de 0.35, talvez. Educação Musical com peso 0.5"
+    },
+    "594530": {
+      "alto": [
+        "Musicoterapia"
+      ],
+      "veredito_original": "Subir peso em musicoterapia para 0.15... ?"
+    },
+    "443058": {
+      "principal": [
+        "Composição e Sonologia"
+      ],
+      "alto": [
+        "Educação Musical"
+      ],
+      "veredito_original": "Subir peso de Educação Musical para 0.35, mais ou menos. Rótulo: Composição..."
+    },
+    "443094": {
+      "principal": [
+        "Composição e Sonologia"
+      ],
+      "alto": [
+        "Educação Musical"
+      ],
+      "veredito_original": "Subir peso de Educação Musical para 0.35, mais ou menos. Rótulo: Composição..."
+    },
+    "591042": {
+      "principal": [
+        "Etnomusicologia"
+      ],
+      "alto": [
+        "Musicologia",
+        "Música Popular"
+      ],
+      "veredito_original": "subir peso de musicologia e musica popular para acima de 0.15. Manter peso alto de etnomusicologia."
+    },
+    "475252": {
+      "principal": [
+        "Composição e Sonologia"
+      ],
+      "alto": [
+        "Teoria e Análise Musical",
+        "Musicologia"
+      ],
+      "veredito_original": "Subir Teoria e Análise para acima de 0.15. Incluir musicologia para acima de 0.15. Manter peso alto em Composição e Sonologia, que deveria ser o rótulo."
+    },
+    "645990": {
+      "principal": [
+        "Teoria e Análise Musical"
+      ],
+      "veredito_original": "está bom, mas área principal é Teoria."
+    },
+    "387869": {
+      "principal": [
+        "Performance Musical"
+      ],
+      "veredito_original": "está bom, mas área principal é Performance."
+    },
+    "639048": {
+      "principal": [
+        "Musicologia"
+      ],
+      "alto": [
+        "Etnomusicologia"
+      ],
+      "veredito_original": "está ótimo, mas subir etnomusicologia para 0.35. Área principal é Musicologia."
+    },
+    "713118": {
+      "principal": [
+        "Etnomusicologia"
+      ],
+      "alto": [
+        "Musicologia",
+        "Educação Musical"
+      ],
+      "veredito_original": "subir peso de musicologia para próximo de 0.2 e de educação musical para perto de 0.3."
+    },
+    "725432": {
+      "principal": [
+        "Música Popular"
+      ],
+      "veredito_original": "Deveria ter peso alto de Música Popular..."
+    },
+    "808842": {
+      "alto": [
+        "Etnomusicologia",
+        "Musicologia",
+        "Educação Musical"
+      ],
+      "baixo": {
+        "Composição e Sonologia": 0.2
+      },
+      "veredito_original": "Não tem relação tão direta com composição.. (peso abaixo de 0.2). Maior peso em Etnomusicologia, Musicologia e Educação Musical (peso próximo de 0.8)."
+    },
+    "466832": {
+      "principal": [
+        "Educação Musical",
+        "Etnomusicologia"
+      ],
+      "veredito_original": "Subir peso de Educação Musical para 0.7, junto com etnomusicologia e deixar como área principal"
+    },
+    "366366": {
+      "principal": [
+        "Composição e Sonologia"
+      ],
+      "veredito_original": "Subir Composição e Sonologia para próximo de 0.8"
+    },
+    "135308": {
+      "principal": [
+        "Música Popular"
+      ],
+      "veredito_original": "Subir peso de Música Popular para 0.9"
+    },
+    "475275": {
+      "principal": [
+        "Performance Musical"
+      ],
+      "veredito_original": "Subir peso de performance bastante, para 0.95"
+    },
+    "572651": {
+      "principal": [
+        "Música Popular"
+      ],
+      "veredito_original": "Subir peso de Música Popular para 0.95"
+    },
+    "719302": {
+      "principal": [
+        "Performance Musical"
+      ],
+      "baixo": {
+        "Composição e Sonologia": 0.05
+      },
+      "veredito_original": "área princpal Performance baixo peso de Composição (< que 0.05)."
+    },
+    "273968": {
+      "alto": [
+        "Teoria e Análise Musical",
+        "Musicologia"
+      ],
+      "baixo": {
+        "Composição e Sonologia": 0.1
+      },
+      "veredito_original": "diminuir composição abaixo de 0.1 e subir teoria e análise e musicologia para acima de 0.3"
+    },
+    "410663": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "B",
+        "Etnomusicologia": "I",
+        "Música Popular": "C",
+        "Performance Musical": "A",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "C",
+        "Musicoterapia": "C",
+        "Demais Subáreas e Interfaces da Música": "C"
+      }
+    },
+    "177695": {
+      "graus": {
+        "Composição e Sonologia": "D",
+        "Educação Musical": "D",
+        "Etnomusicologia": "C",
+        "Música Popular": "C",
+        "Performance Musical": "E",
+        "Musicologia": "A",
+        "Teoria e Análise Musical": "A",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "reteste": [
+        {
+          "graus": {
+            "Composição e Sonologia": "I",
+            "Educação Musical": "D",
+            "Etnomusicologia": "I",
+            "Música Popular": "C",
+            "Performance Musical": "I",
+            "Musicologia": "A",
+            "Teoria e Análise Musical": "I",
+            "Musicoterapia": "I",
+            "Demais Subáreas e Interfaces da Música": "I"
+          },
+          "julgado_em": "2026-09-19T14:31:36"
+        }
+      ]
+    },
+    "177694": {
+      "graus": {
+        "Composição e Sonologia": "C",
+        "Educação Musical": "I",
+        "Etnomusicologia": "C",
+        "Música Popular": "A",
+        "Performance Musical": "E",
+        "Musicologia": "B",
+        "Teoria e Análise Musical": "C",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "D"
+      }
+    },
+    "735053": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "A",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      }
+    },
+    "316791": {
+      "graus": {
+        "Composição e Sonologia": "E",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "C",
+        "Musicologia": "A",
+        "Teoria e Análise Musical": "B",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      }
+    },
+    "419663": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "A",
+        "Musicologia": "B",
+        "Teoria e Análise Musical": "E",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      }
+    },
+    "549536": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "A",
+        "Etnomusicologia": "D",
+        "Música Popular": "E",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      }
+    },
+    "835442": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "A",
+        "Etnomusicologia": "B",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      }
+    },
+    "142554": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "B",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "A",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      }
+    },
+    "803346": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "E",
+        "Etnomusicologia": "C",
+        "Música Popular": "A",
+        "Performance Musical": "A",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      }
+    },
+    "525013": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "A",
+        "Performance Musical": "I",
+        "Musicologia": "A",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "C"
+      }
+    },
+    "694865": {
+      "graus": {
+        "Composição e Sonologia": "E",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "A",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      }
+    },
+    "109683": {
+      "graus": {
+        "Composição e Sonologia": "A",
+        "Educação Musical": "C",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "C",
+        "Teoria e Análise Musical": "C",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "reteste": [
+        {
+          "graus": {
+            "Composição e Sonologia": "A",
+            "Educação Musical": "I",
+            "Etnomusicologia": "I",
+            "Música Popular": "I",
+            "Performance Musical": "I",
+            "Musicologia": "I",
+            "Teoria e Análise Musical": "E",
+            "Musicoterapia": "I",
+            "Demais Subáreas e Interfaces da Música": "I"
+          },
+          "julgado_em": "2026-09-19T14:29:07"
+        }
+      ]
+    },
+    "751589": {
+      "graus": {
+        "Composição e Sonologia": "A",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "C",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      }
+    },
+    "561636": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "A",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "C",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      }
+    },
+    "109662": {
+      "graus": {
+        "Composição e Sonologia": "A",
+        "Educação Musical": "C",
+        "Etnomusicologia": "B",
+        "Música Popular": "B",
+        "Performance Musical": "E",
+        "Musicologia": "C",
+        "Teoria e Análise Musical": "C",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      }
+    },
+    "773731": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "D",
+        "Música Popular": "B",
+        "Performance Musical": "A",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "D",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      }
+    },
+    "550390": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "A",
+        "Etnomusicologia": "C",
+        "Música Popular": "I",
+        "Performance Musical": "C",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      }
+    },
+    "686096": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "A",
+        "Teoria e Análise Musical": "E",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      }
+    },
+    "522081": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "A",
+        "Etnomusicologia": "A",
+        "Música Popular": "C",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      }
+    },
+    "142576": {
+      "graus": {
+        "Composição e Sonologia": "A",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      }
+    },
+    "529703": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "E",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "A",
+        "Demais Subáreas e Interfaces da Música": "C"
+      }
+    },
+    "551342": {
+      "graus": {
+        "Composição e Sonologia": "A",
+        "Educação Musical": "I",
+        "Etnomusicologia": "B",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "D",
+        "Teoria e Análise Musical": "D",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "C"
+      }
+    },
+    "714694": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "D",
+        "Etnomusicologia": "A",
+        "Música Popular": "A",
+        "Performance Musical": "E",
+        "Musicologia": "C",
+        "Teoria e Análise Musical": "E",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      }
+    },
+    "757597": {
+      "graus": {
+        "Composição e Sonologia": "E",
+        "Educação Musical": "D",
+        "Etnomusicologia": "A",
+        "Música Popular": "D",
+        "Performance Musical": "I",
+        "Musicologia": "D",
+        "Teoria e Análise Musical": "D",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      }
+    },
+    "824637": {
+      "graus": {
+        "Composição e Sonologia": "D",
+        "Educação Musical": "D",
+        "Etnomusicologia": "A",
+        "Música Popular": "D",
+        "Performance Musical": "I",
+        "Musicologia": "D",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      }
+    },
+    "549662": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "D",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "C",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "C"
+      }
+    },
+    "408492": {
+      "graus": {
+        "Composição e Sonologia": "A",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "D",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "D"
+      }
+    },
+    "354826": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "B",
+        "Teoria e Análise Musical": "C",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      }
+    },
+    "738068": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "A",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "C",
+        "Demais Subáreas e Interfaces da Música": "D"
+      }
+    },
+    "806722": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "A",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:16:23",
+      "estrato": 7
+    },
+    "555085": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "B",
+        "Teoria e Análise Musical": "C",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "D"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:17:03",
+      "estrato": 8
+    },
+    "337982": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "A",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "E",
+        "Teoria e Análise Musical": "E",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:18:03",
+      "estrato": 1
+    },
+    "703560": {
+      "graus": {
+        "Composição e Sonologia": "A",
+        "Educação Musical": "I",
+        "Etnomusicologia": "E",
+        "Música Popular": "E",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "E",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:18:34",
+      "estrato": 0
+    },
+    "593918": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "A",
+        "Etnomusicologia": "B",
+        "Música Popular": "B",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:19:02",
+      "estrato": 3,
+      "reteste": [
+        {
+          "graus": {
+            "Composição e Sonologia": "I",
+            "Educação Musical": "I",
+            "Etnomusicologia": "B",
+            "Música Popular": "B",
+            "Performance Musical": "I",
+            "Musicologia": "B",
+            "Teoria e Análise Musical": "E",
+            "Musicoterapia": "I",
+            "Demais Subáreas e Interfaces da Música": "I"
+          },
+          "julgado_em": "2026-09-19T14:29:49"
+        }
+      ]
+    },
+    "559574": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "A",
+        "Musicologia": "D",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:19:33",
+      "estrato": 4
+    },
+    "420886": {
+      "graus": {
+        "Composição e Sonologia": "D",
+        "Educação Musical": "E",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "A",
+        "Musicologia": "E",
+        "Teoria e Análise Musical": "E",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:20:13",
+      "estrato": 5
+    },
+    "347940": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "A",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "C",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:20:43",
+      "estrato": 6
+    },
+    "726580": {
+      "graus": {
+        "Composição e Sonologia": "D",
+        "Educação Musical": "I",
+        "Etnomusicologia": "A",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "D",
+        "Teoria e Análise Musical": "D",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:21:41",
+      "estrato": 2
+    },
+    "685950": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "C",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "C",
+        "Demais Subáreas e Interfaces da Música": "E"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:22:44",
+      "estrato": 8
+    },
+    "628862": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "A",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:23:09",
+      "estrato": 1
+    },
+    "688280": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "A",
+        "Performance Musical": "I",
+        "Musicologia": "A",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:23:36",
+      "estrato": 3
+    },
+    "366400": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "A",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "D"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:23:57",
+      "estrato": 5
+    },
+    "378862": {
+      "graus": {
+        "Composição e Sonologia": "A",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "C",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:24:25",
+      "estrato": 0
+    },
+    "623451": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "B",
+        "Etnomusicologia": "I",
+        "Música Popular": "C",
+        "Performance Musical": "B",
+        "Musicologia": "B",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:24:54",
+      "estrato": 4
+    },
+    "531898": {
+      "graus": {
+        "Composição e Sonologia": "A",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "C",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:25:07",
+      "estrato": 6
+    },
+    "488378": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "D",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "A",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:25:26",
+      "estrato": 7
+    },
+    "246273": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "A",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "D",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:25:47",
+      "estrato": 2
+    },
+    "734785": {
+      "graus": {
+        "Composição e Sonologia": "A",
+        "Educação Musical": "I",
+        "Etnomusicologia": "D",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "D",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "D"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:26:03",
+      "estrato": 0
+    },
+    "142582": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "A",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "E",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:26:19",
+      "estrato": 2
+    },
+    "294869": {
+      "graus": {
+        "Composição e Sonologia": "A",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "A",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:26:34",
+      "estrato": 6
+    },
+    "210662": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "A",
+        "Etnomusicologia": "D",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "D",
+        "Teoria e Análise Musical": "E",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:26:56",
+      "estrato": 1
+    },
+    "735990": {
+      "graus": {
+        "Composição e Sonologia": "E",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "A",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "E",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "D"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:27:33",
+      "estrato": 4
+    },
+    "430299": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "C",
+        "Musicologia": "A",
+        "Teoria e Análise Musical": "E",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:27:48",
+      "estrato": 3
+    },
+    "703594": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "A",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "D",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "D"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:28:11",
+      "estrato": 8
+    },
+    "529305": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "E",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "A",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:28:21",
+      "estrato": 7
+    },
+    "470697": {
+      "graus": {
+        "Composição e Sonologia": "A",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "C",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "E"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:28:42",
+      "estrato": 5
+    },
+    "806720": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "E",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "A",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:28:53",
+      "estrato": 7
+    },
+    "744271": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "B",
+        "Teoria e Análise Musical": "D",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "C"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:29:32",
+      "estrato": 5
+    },
+    "437171": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "A",
+        "Música Popular": "I",
+        "Performance Musical": "A",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:30:02",
+      "estrato": 2
+    },
+    "646008": {
+      "graus": {
+        "Composição e Sonologia": "E",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "A",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "E",
+        "Demais Subáreas e Interfaces da Música": "D"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:30:17",
+      "estrato": 4
+    },
+    "135293": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "A",
+        "Performance Musical": "I",
+        "Musicologia": "B",
+        "Teoria e Análise Musical": "E",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:30:33",
+      "estrato": 3
+    },
+    "167725": {
+      "graus": {
+        "Composição e Sonologia": "E",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "A",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:30:44",
+      "estrato": 6
+    },
+    "559200": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "A",
+        "Etnomusicologia": "C",
+        "Música Popular": "C",
+        "Performance Musical": "I",
+        "Musicologia": "D",
+        "Teoria e Análise Musical": "E",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:31:03",
+      "estrato": 1
+    },
+    "341907": {
+      "graus": {
+        "Composição e Sonologia": "A",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "B",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:31:16",
+      "estrato": 0
+    },
+    "443029": {
+      "graus": {
+        "Composição e Sonologia": "D",
+        "Educação Musical": "A",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "E",
+        "Musicoterapia": "E",
+        "Demais Subáreas e Interfaces da Música": "D"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:39:54",
+      "estrato": 8
+    },
+    "167720": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "D",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "A",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:40:04",
+      "estrato": 5
+    },
+    "406465": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "E",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "A",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:40:11",
+      "estrato": 7
+    },
+    "142564": {
+      "graus": {
+        "Composição e Sonologia": "D",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "A",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:40:20",
+      "estrato": 4
+    },
+    "267940": {
+      "graus": {
+        "Composição e Sonologia": "A",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "E",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:40:36",
+      "estrato": 0
+    },
+    "531917": {
+      "graus": {
+        "Composição e Sonologia": "A",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "E",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:40:43",
+      "estrato": 6
+    },
+    "808306": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "E",
+        "Etnomusicologia": "A",
+        "Música Popular": "E",
+        "Performance Musical": "I",
+        "Musicologia": "E",
+        "Teoria e Análise Musical": "E",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:40:55",
+      "estrato": 2
+    },
+    "489748": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "E",
+        "Etnomusicologia": "C",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "B",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "D"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:41:10",
+      "estrato": 3
+    },
+    "177701": {
+      "graus": {
+        "Composição e Sonologia": "E",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "B",
+        "Teoria e Análise Musical": "E",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:41:28",
+      "estrato": 8
+    },
+    "319847": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "D",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "A",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:41:40",
+      "estrato": 1
+    },
+    "272350": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "A",
+        "Performance Musical": "A",
+        "Musicologia": "D",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:41:55",
+      "estrato": 3
+    },
+    "135289": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "C",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "C",
+        "Teoria e Análise Musical": "D",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:42:11",
+      "estrato": 8
+    },
+    "691564": {
+      "graus": {
+        "Composição e Sonologia": "D",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "A",
+        "Teoria e Análise Musical": "D",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:42:24",
+      "estrato": 0
+    },
+    "685964": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "C",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "A",
+        "Musicologia": "D",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:42:33",
+      "estrato": 4
+    },
+    "683088": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "D",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "C",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "E",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "D"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:42:48",
+      "estrato": 1
+    },
+    "835229": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "A",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "D",
+        "Teoria e Análise Musical": "E",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:43:04",
+      "estrato": 2
+    },
+    "142558": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "A",
+        "Musicologia": "D",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:43:17",
+      "estrato": 6
+    },
+    "142592": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "E",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "A",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:43:22",
+      "estrato": 7
+    },
+    "695140": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "E",
+        "Musicoterapia": "A",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:43:47",
+      "estrato": 5
+    },
+    "334004": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "A",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:44:01",
+      "estrato": 4
+    },
+    "492962": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "A",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:44:12",
+      "estrato": 5
+    },
+    "620729": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "I",
+        "Música Popular": "A",
+        "Performance Musical": "I",
+        "Musicologia": "B",
+        "Teoria e Análise Musical": "E",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:44:25",
+      "estrato": 3
+    },
+    "808339": {
+      "graus": {
+        "Composição e Sonologia": "E",
+        "Educação Musical": "I",
+        "Etnomusicologia": "C",
+        "Música Popular": "A",
+        "Performance Musical": "I",
+        "Musicologia": "D",
+        "Teoria e Análise Musical": "E",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:44:47",
+      "estrato": 2
+    },
+    "580835": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "I",
+        "Etnomusicologia": "C",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "B",
+        "Demais Subáreas e Interfaces da Música": "D"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:45:03",
+      "estrato": 7
+    },
+    "437306": {
+      "graus": {
+        "Composição e Sonologia": "I",
+        "Educação Musical": "A",
+        "Etnomusicologia": "I",
+        "Música Popular": "I",
+        "Performance Musical": "I",
+        "Musicologia": "I",
+        "Teoria e Análise Musical": "I",
+        "Musicoterapia": "I",
+        "Demais Subáreas e Interfaces da Música": "I"
+      },
+      "rodada": 3,
+      "modo": "aleatorio",
+      "julgado_em": "2026-09-19T14:45:11",
+      "estrato": 1
+    }
+  }
+}
