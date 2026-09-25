@@ -1,0 +1,5 @@
+# Servido em /opqmbr/robots.txt, caminho que os rastreadores não consultam: o
+# robots.txt que vale é o da raiz (https://ecris.cc/robots.txt), gerenciado pela
+# Cloudflare (sinais de conteúdo e permissão de rastreio). Ver docs/DEPLOY.md,
+# "Indexação". A indexação do site está aberta (decisão D6, docs/PLANO_UMAMI_PROTECAO.md).
+Sitemap: https://ecris.cc/opqmbr/sitemap.xml

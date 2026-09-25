@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sitemap da edição pública (docs/PLANO_UMAMI_PROTECAO.md, Parte B). Um sitemap em
+     /opqmbr/ só pode listar URLs abaixo de /opqmbr/; as rotas da edição completa
+     (/campo, /conceito) não entram. As rotas vêm de site/src/App.tsx. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://ecris.cc/opqmbr/</loc></url>
+  <url><loc>https://ecris.cc/opqmbr/mapa-de-projetos</loc></url>
+  <url><loc>https://ecris.cc/opqmbr/projetos</loc></url>
+  <url><loc>https://ecris.cc/opqmbr/sem-projeto</loc></url>
+  <url><loc>https://ecris.cc/opqmbr/regimes</loc></url>
+  <url><loc>https://ecris.cc/opqmbr/colaboracao</loc></url>
+  <url><loc>https://ecris.cc/opqmbr/dados</loc></url>
+  <url><loc>https://ecris.cc/opqmbr/sobre</loc></url>
+</urlset>
